@@ -23,8 +23,8 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  # Pages publishes this repo at <domain>/hvacriyadh/.
-  NEXT_PUBLIC_BASE_PATH: /hvacriyadh
+  # Pages publishes this repo at <domain>/hvac-riyadh/.
+  NEXT_PUBLIC_BASE_PATH: /hvac-riyadh
   NEXT_PUBLIC_SITE_URL: http://devtamim.me/hvacriyadh
 
 jobs:
