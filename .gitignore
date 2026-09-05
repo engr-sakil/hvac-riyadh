@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.DS_Store
+.env*.local
+
+# preview artefacts
+.playwright-mcp/
+*.png
+!public/**/*.png
+!brand/*.png

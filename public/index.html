@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HVAC Riyadh — Nasmat Sheta Co.</title>
+    <link rel="canonical" href="https://www.hvacriyadh.com/en/" />
+    <link rel="alternate" hreflang="en" href="https://www.hvacriyadh.com/en/" />
+    <link rel="alternate" hreflang="ar" href="https://www.hvacriyadh.com/ar/" />
+    <link rel="alternate" hreflang="x-default" href="https://www.hvacriyadh.com/en/" />
+    <meta http-equiv="refresh" content="0; url=/en/" />
+    <script>
+      // Send Arabic browsers straight to the Arabic site. Everyone else gets English.
+      // On Vercel this file is never reached — vercel.json 308s / to /en/ first.
+      (function () {
+        try {
+          var langs = navigator.languages || [navigator.language || 'en'];
+          var ar = langs.some(function (l) {
+            return String(l).toLowerCase().indexOf('ar') === 0;
+          });
+          location.replace(ar ? '/ar/' : '/en/');
+        } catch (e) {
+          location.replace('/en/');
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <p>
+      Redirecting to <a href="/en/">HVAC Riyadh</a> —
+      <a href="/ar/">العربية</a>
+    </p>
+  </body>
+</html>

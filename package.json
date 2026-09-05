@@ -1,0 +1,25 @@
+{
+  "name": "hvacriyadh",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Nasmat Sheta Co. — HVAC Riyadh. Bilingual (EN/AR) static site.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && node scripts/post-build.mjs",
+    "start": "node scripts/serve.mjs",
+    "images": "node scripts/optimize-images.mjs",
+    "brand": "node scripts/brand-assets.mjs"
+  },
+  "dependencies": {
+    "next": "16.3.4",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.3",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5",
+    "sharp": "0.35.4",
+    "typescript": "5.9.3"
+  }
+}

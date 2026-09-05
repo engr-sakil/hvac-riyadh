@@ -1,0 +1,22 @@
+{
+  "name": "HVAC Riyadh — Nasmat Sheta Co.",
+  "short_name": "HVAC Riyadh",
+  "description": "HVAC installation, repair and maintenance across Riyadh, and ductwork fabricated in our own workshop.",
+  "start_url": "/en/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#062c4f",
+  "icons": [
+    {
+      "src": "/brand/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/brand/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
