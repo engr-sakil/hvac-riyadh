@@ -26,7 +26,7 @@ export default function Header({ locale, path = '' }: { locale: Locale; path?: s
 
   return (
     <header className="header">
-      <div className="topbar">
+      {/* <div className="topbar">
         <div className="wrap">
           <span>
             {locale === 'en'
@@ -40,7 +40,7 @@ export default function Header({ locale, path = '' }: { locale: Locale; path?: s
             </a>
           </span>
         </div>
-      </div>
+      </div> */}
 
       <div className="wrap header__inner">
         <Link className="brand" href={href(locale)}>

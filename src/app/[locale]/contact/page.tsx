@@ -89,12 +89,12 @@ export default async function ContactPage({
                       <a href={TEL_MOBILE}><bdi>{BUSINESS.mobileDisplay}</bdi></a>
                     </li>
                     <li>
-                      <span className="label">{t.contact.landlineLabel}</span>
-                      <a href={TEL_LANDLINE}><bdi>{BUSINESS.landlineDisplay}</bdi></a>
-                    </li>
-                    <li>
                       <span className="label">{t.contact.emailLabel}</span>
                       <a href={MAILTO}>{BUSINESS.email}</a>
+                    </li>
+                     <li>
+                      <span className="label">{t.contact.emailLabel}</span>
+                      <a href={MAILTO}>{BUSINESS.emailCc}</a>
                     </li>
                     <li>
                       <span className="label">{t.contact.addressLabel}</span>

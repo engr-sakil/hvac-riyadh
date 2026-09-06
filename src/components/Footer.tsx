@@ -68,11 +68,11 @@ export default function Footer({ locale }: { locale: Locale }) {
           <div>
             <h3>{t.footer.contactTitle}</h3>
             <ul>
-              <li>
-                <a href={TEL_MOBILE}><bdi>{BUSINESS.mobileDisplay}</bdi></a>
+               <li>
+                <a href=""><bdi>{BUSINESS.owner}</bdi></a>
               </li>
               <li>
-                <a href={TEL_LANDLINE}><bdi>{BUSINESS.landlineDisplay}</bdi></a>
+                <a href={TEL_MOBILE}><bdi>{BUSINESS.mobileDisplay}</bdi></a>
               </li>
               <li>
                 <a href={WHATSAPP_URL} target="_blank" rel="noopener">
@@ -80,7 +80,7 @@ export default function Footer({ locale }: { locale: Locale }) {
                 </a>
               </li>
               <li>
-                <a href={MAILTO}>{BUSINESS.email}</a>
+                <a href={MAILTO}>{BUSINESS.emailCc}</a>
               </li>
               <li>
                 {addr.line1}

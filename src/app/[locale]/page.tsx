@@ -94,7 +94,7 @@ export default async function HomePage({
               </a>
             </div>
           </div>
-          <div className="hero__strip">
+          {/* <div className="hero__strip">
             <div className="wrap">
               {t.home.trust.map((item) => (
                 <span key={item.title}>
@@ -102,7 +102,7 @@ export default async function HomePage({
                 </span>
               ))}
             </div>
-          </div>
+          </div> */}
         </section>
 
         {/* --------------------------------------------------------- trust */}
