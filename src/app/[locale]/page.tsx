@@ -49,8 +49,8 @@ export default async function HomePage({
     'ductwork-fabrication': bySlug('fab-spiral-duct-stacks'),
   };
 
-  const projectPreview = PHOTOS.filter((p) => p.category !== 'facility').slice(0, 6);
-  const workshopPreview = byCategory('facility').slice(0, 3);
+  const projectPreview = PHOTOS.filter((p) => p.category !== 'facility').slice(0, 8);
+  const workshopPreview = byCategory('facility').slice(0, 4);
   const ductPhoto = bySlug('fab-galvanised-fittings-batch')!;
   const energyPhoto = bySlug('install-rooftop-ahu-riyadh')!;
 
