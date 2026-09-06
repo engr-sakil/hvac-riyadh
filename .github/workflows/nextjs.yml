@@ -24,8 +24,8 @@ concurrency:
 
 env:
   # Pages publishes this repo at <domain>/hvac-riyadh/.
-  NEXT_PUBLIC_BASE_PATH: /hvac-riyadh
-  NEXT_PUBLIC_SITE_URL: http://devtamim.me/hvacriyadh
+  NEXT_PUBLIC_BASE_PATH: ""
+  NEXT_PUBLIC_SITE_URL: https://www.hvacriyadh.com
 
 jobs:
   build:
