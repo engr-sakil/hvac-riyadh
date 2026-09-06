@@ -11,9 +11,9 @@ import type { Content } from './content';
 export const en: Content = {
   meta: {
     siteName: 'HVAC Riyadh — Nasmat Sheta Co.',
-    homeTitle: 'HVAC Installation, Repair & Ductwork Fabrication in Riyadh',
+    homeTitle: 'HVAC Installation, Repair & Ductwork Fabrication in Saudi Arabia',
     homeDescription:
-      'Nasmat Sheta Co. installs, repairs and maintains HVAC systems across Riyadh, and fabricates ductwork to SMACNA, BSI and DW144 in our own workshop in Al Sina’iyah. Call or WhatsApp +966 54 504 8875.',
+      'Nasmat Sheta Co. installs, repairs and maintains HVAC systems across Saudi Arabia, and fabricates ductwork to SMACNA, BSI and DW144 in our own workshop in Al Sina’iyah. Call or WhatsApp +966 54 504 8875.',
   },
 
   nav: {
@@ -39,10 +39,10 @@ export const en: Content = {
   },
 
   home: {
-    heroEyebrow: 'Riyadh · Commercial, industrial and residential',
-    heroTitle: 'Reliable HVAC Installation, Repair & Maintenance in Riyadh',
+    heroEyebrow: 'Saudi Arabia · Commercial, industrial and residential',
+    heroTitle: 'Reliable HVAC Installation, Repair & Maintenance in Saudi Arabia',
     heroSubtitle:
-      'Nasmat Sheta Co. services HVAC systems across Riyadh and fabricates ductwork in our own workshop in Al Sina’iyah — galvanised, black and stainless steel, built to SMACNA, BSI and DW144.',
+      'Nasmat Sheta Co. services HVAC systems across Saudi Arabia and fabricates ductwork in our own workshop in Al Sina’iyah — galvanised, black and stainless steel, built to SMACNA, BSI and DW144.',
 
     trust: [
       {
