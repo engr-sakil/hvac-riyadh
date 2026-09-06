@@ -493,7 +493,7 @@ export const en: Content = {
 
   footer: {
     tagline:
-      'HVAC installation, repair and maintenance across Riyadh — and ductwork fabricated in our own workshop.',
+      'HVAC installation, repair and maintenance across Saudi Arabia — and ductwork fabricated in our own workshop.',
     servicesTitle: 'Services',
     companyTitle: 'Company',
     contactTitle: 'Contact',
