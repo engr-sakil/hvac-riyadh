@@ -38,7 +38,7 @@ export const BUSINESS = {
   /** Primary business inbox, per the current contact page. */
   email: 'nasmatsheta.co@gmail.com',
   /** The contact page asks for this address in CC. */
-  emailCc: 'mokbul.hossain2030@gmail.com',
+  emailCc: 'hvacriyadhksa@gmail.com',
 
   address: {
     street: "Al Sina'iyah",
