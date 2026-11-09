@@ -8,6 +8,7 @@ import { faqSchema, JsonLd, localBusinessSchema, pageMeta } from '@/lib/seo';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CallBar from '@/components/CallBar';
+import KitchenHoodSection from '@/components/KitchenHoodSection';
 import { CtaBlock, FaqList, Gallery, ServiceGrid } from '@/components/ui';
 
 export async function generateMetadata({
@@ -201,6 +202,8 @@ export default async function HomePage({
             </div>
           </div>
         </section>
+
+          <KitchenHoodSection locale={locale} />
 
         {/* -------------------------------------------------------- energy */}
         <section className="section">

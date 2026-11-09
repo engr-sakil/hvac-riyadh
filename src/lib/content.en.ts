@@ -106,6 +106,26 @@ export const en: Content = {
       'Installation of energy management systems',
     ],
 
+    kitchenHood: {
+      title: 'Kitchen Hood Installation',
+      intro: 'HVAC Riyadh fabricates and installs custom stainless steel kitchen hoods for homes, villas and restaurants in Riyadh and across Saudi Arabia. We can install the hood, exhaust ductwork and fan as one job, based on your cooking equipment, kitchen layout and available exhaust route.',
+      coverage: 'For homes and restaurants across Saudi Arabia',
+      list: [
+        'Custom stainless steel hoods sized to your cooking area',
+        'Residential range hoods for home kitchens and villas',
+        'Commercial kitchen hoods for restaurants and new fit-outs',
+        'Kitchen exhaust ductwork and wall or roof fan installation',
+        'Replacement hoods and updates to existing exhaust layouts'
+      ],
+      subheading: 'What to send for a quote',
+      tags: [
+        'Your city',
+        'Kitchen photos',
+        'Approximate dimensions'
+      ],
+      alt: 'Four kitchen hood project photos showing installed stainless steel hoods, baffle filters and an exterior exhaust fan.',
+      message: 'Hello, I would like a quote for kitchen hood installation.'
+    },
     projectsTitle: 'Recent Work',
     projectsIntro:
       'Installations and fabrication from Riyadh sites and from our workshop floor.',

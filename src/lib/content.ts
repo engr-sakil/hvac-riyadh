@@ -84,6 +84,16 @@ export type Content = {
     energyTitle: string;
     energyBody: string;
     energyItems: string[];
+    kitchenHood: {
+      title: string;
+      intro: string;
+      coverage: string;
+      list: string[];
+      subheading: string;
+      tags: string[];
+      alt: string;
+      message: string;
+    };
     projectsTitle: string;
     projectsIntro: string;
     workshopTitle: string;
