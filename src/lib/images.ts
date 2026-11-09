@@ -221,6 +221,15 @@ export const PHOTOS: Photo[] = [
     },
     services: [],
   },
+  {
+    slug: 'kitchen-hood-projects',
+    category: 'installation',
+    alt: {
+      en: 'Four kitchen hood project photos showing stainless steel hoods, filters and an exterior exhaust fan.',
+      ar: 'أربع صور لأعمال تركيب هود ستانلس ستيل وفلاتر دهون ومروحة شفط خارجية.',
+    },
+    services: ['kitchen-hood-installation'],
+  },
 ];
 
 export const photoSrc = (slug: string, width: 800 | 1600) =>

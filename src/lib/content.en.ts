@@ -190,9 +190,9 @@ export const en: Content = {
   services: {
     indexTitle: 'HVAC Services in Riyadh',
     indexDescription:
-      'HVAC installation, repair, maintenance, upgrades, energy management and ductwork fabrication across Riyadh from Nasmat Sheta Co.',
+      'Explore HVAC installation, repair and ductwork fabrication in Riyadh, plus kitchen hood installation for homes and restaurants across Saudi Arabia.',
     indexIntro:
-      'Six service lines, all delivered by the same company — including the ductwork behind the systems we install.',
+      'Explore our HVAC, ductwork fabrication and kitchen hood installation services.',
 
     problemsTitle: 'When you need this',
     providesTitle: 'What we provide',
@@ -382,6 +382,36 @@ export const en: Content = {
         ],
       },
 
+      'kitchen-hood-installation': {
+        slug: 'kitchen-hood-installation',
+        name: 'Kitchen Hood Installation',
+        seoTitle: 'Kitchen Hood Installation in Saudi Arabia',
+        seoDescription: 'Kitchen hood installation for homes and restaurants in Riyadh and across Saudi Arabia. Get a quote for stainless steel hoods, exhaust fans and ductwork.',
+        h1: 'Kitchen Hood Installation for Homes & Restaurants in Saudi Arabia',
+        teaser: 'Custom stainless steel kitchen hoods, exhaust ductwork and fans for homes and restaurants across Saudi Arabia.',
+        intro:
+          'Nasmat Sheta Co. installs kitchen hoods for homes and restaurants in Riyadh and across Saudi Arabia. We fabricate custom stainless steel hoods and install kitchen exhaust ductwork and fans to suit your kitchen layout.',
+        problems: [
+          'A new home kitchen or villa needs a range hood above the cooker',
+          'A restaurant fit-out needs a commercial kitchen hood and an exhaust route',
+          'An existing kitchen needs a replacement hood or an updated exhaust layout',
+        ],
+        provides: [
+          'Custom stainless steel kitchen hoods for homes and restaurants',
+          'Residential range hood and commercial kitchen hood installation',
+          'Kitchen exhaust ductwork and exhaust fan installation',
+        ],
+        process: [
+          { title: 'Share your kitchen details', body: 'Send your city, kitchen photos and approximate cooking area dimensions.' },
+          { title: 'Review the layout', body: 'We review the cooking equipment, available space and route for the exhaust duct before quoting.' },
+          { title: 'Fabricate and install', body: 'We make the hood to fit the agreed layout and install the hood, ductwork and fan as quoted.' },
+        ],
+        faq: [
+          { q: 'Do you install hoods outside Riyadh?', a: 'Yes. We take on kitchen hood projects across Saudi Arabia. Send us your city and project details to discuss the installation.' },
+          { q: 'Do you install kitchen hoods for both homes and restaurants?', a: 'Yes. We install residential range hoods for homes and villas and commercial kitchen hoods for restaurants.' },
+          { q: 'Can the quote include ductwork and an exhaust fan?', a: 'Yes. Share photos or drawings of your kitchen so we can quote for the hood, ductwork and exhaust fan based on the layout.' },
+        ],
+      },
       'ductwork-fabrication': {
         slug: 'ductwork-fabrication',
         name: 'Ductwork & Fabrication',

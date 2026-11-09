@@ -13,11 +13,13 @@ export function pageMeta({
   path = '',
   title,
   description,
+  image,
 }: {
   locale: Locale;
   path?: string;
   title: string;
   description: string;
+  image?: { url: string; alt: string };
 }): Metadata {
   const url = `${SITE_URL}${href(locale, path)}/`;
   return {
@@ -38,7 +40,7 @@ export function pageMeta({
       title,
       description,
       locale: locale === 'ar' ? 'ar_SA' : 'en_US',
-      images: [
+      images: image ? [image] : [
         {
           url: '/img/install-rooftop-ductwork-condensers-1600.webp',
           width: 1600,
@@ -50,7 +52,7 @@ export function pageMeta({
         },
       ],
     },
-    twitter: { card: 'summary_large_image', title, description },
+    twitter: { card: 'summary_large_image', title, description, images: image ? [image] : undefined },
   };
 }
 
@@ -90,6 +92,7 @@ export function serviceSchema(
   name: string,
   description: string,
   url: string,
+  coverage: 'riyadh' | 'saudi-arabia' = 'riyadh',
 ) {
   return {
     '@context': 'https://schema.org',
@@ -99,7 +102,9 @@ export function serviceSchema(
     url,
     serviceType: name,
     provider: { '@id': `${SITE_URL}/#business` },
-    areaServed: { '@type': 'City', name: locale === 'ar' ? 'الرياض' : 'Riyadh' },
+    areaServed: coverage === 'saudi-arabia'
+      ? { '@type': 'Country', name: locale === 'ar' ? BUSINESS.addressAr.country : BUSINESS.address.country }
+      : { '@type': 'City', name: locale === 'ar' ? 'الرياض' : 'Riyadh' },
   };
 }
 

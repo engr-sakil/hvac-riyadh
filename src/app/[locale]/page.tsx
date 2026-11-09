@@ -48,6 +48,7 @@ export default async function HomePage({
     'upgrades-retrofits': bySlug('install-insulated-duct-flex-drops'),
     'energy-management': bySlug('install-rooftop-ductwork-condensers'),
     'ductwork-fabrication': bySlug('fab-spiral-duct-stacks'),
+    'kitchen-hood-installation': bySlug('kitchen-hood-projects'),
   };
 
   const projectPreview = PHOTOS.filter((p) => p.category !== 'facility').slice(0, 8);

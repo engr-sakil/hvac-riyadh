@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { getContent } from '@/lib/content';
-import { asset, href, ROUTES } from '@/lib/paths';
+import { asset, servicePath } from '@/lib/paths';
 import { WHATSAPP_URL, type Locale } from '@/lib/site';
 
 export default function KitchenHoodSection({ locale }: { locale: Locale }) {
@@ -42,8 +42,8 @@ export default function KitchenHoodSection({ locale }: { locale: Locale }) {
               ))}
             </ul>
             <div className="btn-row" style={{ marginTop: '2rem' }}>
-              <Link className="btn btn--primary" href={href(locale, ROUTES.contact)}>
-                {t.nav.contact}
+              <Link className="btn btn--primary" href={servicePath(locale, 'kitchen-hood-installation')}>
+                {t.cta.learnMore}
               </Link>
               <a
                 className="btn btn--outline"

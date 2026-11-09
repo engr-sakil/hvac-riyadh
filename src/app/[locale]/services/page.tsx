@@ -43,6 +43,7 @@ export default async function ServicesPage({
     'upgrades-retrofits': bySlug('install-insulated-duct-flex-drops'),
     'energy-management': bySlug('install-rooftop-ductwork-condensers'),
     'ductwork-fabrication': bySlug('fab-spiral-duct-stacks'),
+    'kitchen-hood-installation': bySlug('kitchen-hood-projects'),
   };
 
   return (

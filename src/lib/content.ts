@@ -9,6 +9,7 @@ export const SERVICE_SLUGS = [
   'upgrades-retrofits',
   'energy-management',
   'ductwork-fabrication',
+  'kitchen-hood-installation',
 ] as const;
 
 export type ServiceSlug = (typeof SERVICE_SLUGS)[number];
@@ -25,6 +26,7 @@ export type Service = {
   name: string;
   /** <title> and H1 are derived from these two. */
   seoTitle: string;
+  seoDescription?: string;
   h1: string;
   /** One line for the services grid. */
   teaser: string;

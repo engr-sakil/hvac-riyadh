@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { LOCALES, SITE_URL, toLocale } from '@/lib/site';
 import { getContent, getService, isServiceSlug, SERVICE_SLUGS } from '@/lib/content';
 import { ROUTES, servicePath } from '@/lib/paths';
-import { forService } from '@/lib/images';
+import { bySlug, forService, photoSrc } from '@/lib/images';
 import { faqSchema, JsonLd, pageMeta, serviceSchema } from '@/lib/seo';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
@@ -25,11 +25,13 @@ export async function generateMetadata({
   if (!isServiceSlug(slug)) return {};
   const locale = toLocale(localeParam);
   const s = getService(locale, slug);
+  const sharePhoto = slug === 'kitchen-hood-installation' ? bySlug('kitchen-hood-projects') : undefined;
   return pageMeta({
     locale,
     path: `${ROUTES.services}/${slug}`,
     title: s.seoTitle,
-    description: s.intro.slice(0, 175),
+    description: s.seoDescription ?? s.intro.slice(0, 175),
+    image: sharePhoto ? { url: photoSrc(sharePhoto.slug, 800), alt: sharePhoto.alt[locale] } : undefined,
   });
 }
 
@@ -44,13 +46,17 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
 
   return (
     <>
-      <Header locale={locale} path={ROUTES.services} />
+      <Header
+        locale={locale}
+        path={slug === 'kitchen-hood-installation' ? `${ROUTES.services}/${slug}` : ROUTES.services}
+      />
       <JsonLd
         data={serviceSchema(
           locale,
           s.name,
           s.teaser,
           `${SITE_URL}${servicePath(locale, slug)}/`,
+          slug === 'kitchen-hood-installation' ? 'saudi-arabia' : 'riyadh',
         )}
       />
       <JsonLd data={faqSchema(s.faq)} />
