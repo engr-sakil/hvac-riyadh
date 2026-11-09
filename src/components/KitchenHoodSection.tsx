@@ -8,22 +8,32 @@ export default function KitchenHoodSection({ locale }: { locale: Locale }) {
   const hood = t.home.kitchenHood;
 
   return (
-    <section id="kitchen-hood" className="section section--dark" aria-labelledby="kitchen-hood-title">
+    <section
+      id="kitchen-hood"
+      className="section"
+      style={{ backgroundColor: 'var(--brand-100)' }}
+      aria-labelledby="kitchen-hood-title"
+    >
       <div className="wrap">
         <div className="split split--wide-text" dir="ltr">
           <div dir={locale === 'ar' ? 'rtl' : 'ltr'}>
-            <span className="eyebrow" style={{ color: '#8fc0e8' }}>
+            <span className="eyebrow">
               {t.nav.services}
             </span>
             <h2 id="kitchen-hood-title">{hood.title}</h2>
-            <p style={{ color: '#cfe0ef', fontSize: '1.05rem' }}>{hood.intro}</p>
-            <p className="standards">{hood.coverage}</p>
+            <p style={{ color: 'var(--ink-2)', fontSize: '1.05rem' }}>{hood.intro}</p>
+            <p
+              className="standards"
+              style={{ background: 'var(--bg)', borderColor: 'var(--line)', color: 'var(--brand-800)' }}
+            >
+              {hood.coverage}
+            </p>
             <ul className="ticks">
               {hood.list.map((item) => (
                 <li key={item}>{item}</li>
               ))}
             </ul>
-            <p style={{ marginTop: '1.75rem', color: '#8fc0e8', fontWeight: 600 }}>
+            <p style={{ marginTop: '1.75rem', color: 'var(--brand-800)', fontWeight: 600 }}>
               {hood.subheading}
             </p>
             <ul className="tags">
@@ -36,7 +46,7 @@ export default function KitchenHoodSection({ locale }: { locale: Locale }) {
                 {t.nav.contact}
               </Link>
               <a
-                className="btn btn--ghost"
+                className="btn btn--outline"
                 href={`${WHATSAPP_URL}?text=${encodeURIComponent(hood.message)}`}
                 target="_blank"
                 rel="noopener"
