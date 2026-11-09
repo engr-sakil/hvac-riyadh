@@ -8,7 +8,7 @@ import { faqSchema, JsonLd, pageMeta, serviceSchema } from '@/lib/seo';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import CallBar from '@/components/CallBar';
-import { CtaBlock, FaqList, Gallery, PageHero } from '@/components/ui';
+import { CtaBlock, FaqList, Gallery, Img, PageHero } from '@/components/ui';
 
 type Params = { locale: string; slug: string };
 
@@ -43,6 +43,8 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
   const t = getContent(locale);
   const s = getService(locale, slug);
   const photos = forService(slug, 3);
+  const featurePhoto = slug === 'kitchen-hood-installation' ? photos[0] : undefined;
+  const relatedPhotos = photos.filter((photo) => photo !== featurePhoto);
 
   return (
     <>
@@ -80,13 +82,23 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
                   ))}
                 </ul>
               </div>
-              <div className="card" style={{ alignSelf: 'start' }}>
-                <h3>{t.services.providesTitle}</h3>
-                <ul className="ticks" style={{ marginTop: '0.75rem' }}>
-                  {s.provides.map((p) => (
-                    <li key={p}>{p}</li>
-                  ))}
-                </ul>
+              <div style={{ alignSelf: 'start' }}>
+                {featurePhoto ? (
+                  <Img
+                    photo={featurePhoto}
+                    locale={locale}
+                    sizes="(min-width: 1180px) 500px, (min-width: 900px) 43vw, 100vw"
+                    priority
+                  />
+                ) : null}
+                <div className="card" style={featurePhoto ? { marginTop: '1rem' } : undefined}>
+                  <h3>{t.services.providesTitle}</h3>
+                  <ul className="ticks" style={{ marginTop: '0.75rem' }}>
+                    {s.provides.map((p) => (
+                      <li key={p}>{p}</li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -108,13 +120,13 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
           </div>
         </section>
 
-        {photos.length > 0 ? (
+        {relatedPhotos.length > 0 ? (
           <section className="section">
             <div className="wrap">
               <div className="section-head">
                 <h2>{t.services.relatedWorkTitle}</h2>
               </div>
-              <Gallery photos={photos} locale={locale} />
+              <Gallery photos={relatedPhotos} locale={locale} />
             </div>
           </section>
         ) : null}
